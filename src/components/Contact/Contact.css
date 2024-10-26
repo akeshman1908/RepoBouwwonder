@@ -1,0 +1,150 @@
+/* Contact Section */
+.contact-section {
+  background-color: white; 
+  padding: 4rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-section .container {
+  width: 85%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap; /* Allow wrapping for responsive layouts */
+}
+
+/* Text Block */
+.contact-text {
+  color: black;
+  flex: 1;
+}
+
+.contact-text h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #223280;
+}
+
+.contact-text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.contact-form {
+  background-color: white;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  flex: 1;
+}
+
+.contact-form .row {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between; /* Ensure equal spacing */
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
+  flex: 1; /* Make all input fields in the row equal in width */
+  min-width: 0; /* Ensure they can shrink properly */
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  box-sizing: border-box; /* Ensure padding is included in the width */
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Email and Message Fields */
+.contact-form .email-field,
+.contact-form .message-field {
+  flex: 1; /* Make email and message field full width in the row */
+}
+
+.contact-form textarea {
+  height: 150px; /* Larger height for the message field */
+  resize: vertical; /* Allow resizing of the textarea */
+}
+
+.contact-form input[type="checkbox"] {
+  width: auto;
+}
+
+.contact-form label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.contact-form .btn {
+  background-color: #f57c00;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+}
+
+.contact-form .btn:hover {
+  background-color: #d96b00;
+}
+
+/* Responsive Design */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .contact-section .container {
+    flex-direction: column; /* Stack text and form vertically on tablets */
+    align-items: center;
+  }
+
+  .contact-text h2 {
+    font-size: 2rem; /* Adjust heading size */
+  }
+
+  .contact-text p {
+    font-size: 1.1rem; /* Adjust text size */
+  }
+
+  .contact-form .row {
+    flex-direction: column; /* Stack fields vertically on smaller screens */
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 2rem 0; /* Reduce padding on mobile */
+  }
+
+  .contact-text h2 {
+    font-size: 1.8rem; /* Smaller heading for mobile */
+  }
+
+  .contact-text p {
+    font-size: 1rem; /* Adjust text size for mobile */
+  }
+
+  .contact-form {
+    padding: 1.5rem; /* Reduce form padding */
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.9rem; /* Slightly smaller text for inputs */
+  }
+}

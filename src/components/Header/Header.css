@@ -1,0 +1,159 @@
+/* Header container - Full width background */
+.header {
+  background-color: #223280; /* Blue background */
+  height: 40rem; /* Increased height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0; /* Remove padding to align with navbar */
+  width: 100vw; /* Full width of the viewport */
+  margin-top: 0; /* Remove margin to align directly under the navbar */
+  position: relative;
+}
+
+/* Constrain content inside a centered container */
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%; /* Set a relative width to keep content within a container */
+  max-width: 1200px; /* Maximum width to ensure readability */
+}
+
+/* Left side (image) */
+.header .image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.header .image-container img {
+  width: 70%; /* Adjust as needed */
+  border-radius: 15px; /* Slightly rounded corners */
+}
+
+/* Right side (text, slogan, button, review) */
+.header .content {
+  flex: 1.2;
+  color: white;
+  text-align: left; /* Left-align all text */
+}
+
+.header .content h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.header .content p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.header .content .slogan {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.header .content .btn {
+  background-color: #f57c00; /* Orange button */
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+.header .content .btn:hover {
+  background-color: #d96b00;
+}
+
+/* Review box */
+.header .content .review-container {
+  background-color: white;
+  color: black;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+}
+
+.header .content .review-container p {
+  font-size: 1rem;
+}
+
+.header .content .review-container .reviewer {
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+/* Yellow stars */
+.header .content .review-container .stars i {
+  color: #ffc107; /* Yellow color for stars */
+}
+
+/* Responsive Design */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .header {
+    height: 35rem; /* Decrease height for tablets */
+  }
+
+  .header .content h1 {
+    font-size: 2rem; /* Adjust heading size */
+  }
+
+  .header .content p {
+    font-size: 1rem;
+  }
+
+  .header .content .slogan {
+    font-size: 1.3rem;
+  }
+
+  .header .image-container img {
+    width: 60%; /* Adjust image size */
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column; /* Stack image and content vertically */
+    height: auto; /* Adjust height for mobile */
+    padding: 20px 0; /* Add some padding */
+  }
+
+  .header .container {
+    flex-direction: column; /* Stack content vertically */
+    width: 90%; /* Reduce width for better readability on mobile */
+  }
+
+  .header .image-container {
+    display: none; /* Hide image on mobile */
+  }
+
+  .header .content h1 {
+    font-size: 1.8rem; /* Smaller heading size for mobile */
+  }
+
+  .header .content p {
+    font-size: 1rem; /* Smaller paragraph size */
+  }
+
+  .header .content .slogan {
+    font-size: 1.2rem;
+  }
+
+  .header .content .btn {
+    font-size: 1rem;
+    padding: 0.7rem 1.2rem; /* Smaller button for mobile */
+  }
+
+  .header .content .review-container {
+    max-width: 100%; /* Make the review container take full width */
+  }
+}

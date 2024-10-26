@@ -1,0 +1,122 @@
+/* Methods Section */
+.methods-section {
+  background-color: white;
+  padding: 4rem 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.methods-section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #223280; 
+  margin-bottom: 1rem;
+}
+
+.methods-section p.subtitle {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 3rem;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; 
+}
+
+.accordion-item {
+  background-color: #f1f1f1; 
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.accordion-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  cursor: pointer;
+  background-color: #223280; 
+  color: white;
+  font-size: 1.1rem;  
+  font-weight: normal; 
+}
+
+.accordion-title h3 {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem; 
+}
+
+.accordion-title h3 .number {
+  margin-right: 0.5rem; 
+  font-size: 1.3rem;    
+  font-weight: bold;    
+}
+
+.accordion-title:hover {
+  background-color: #1b2545; 
+}
+
+.accordion-icon {
+  font-size: 1rem; 
+}
+
+.accordion-content {
+  padding: 1rem;
+  background-color: #f1f1f1;
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .methods-section h2 {
+    font-size: 2rem;
+  }
+
+  .methods-section p.subtitle {
+    font-size: 1.1rem;
+  }
+
+  .accordion-title h3 {
+    font-size: 1.2rem;
+  }
+  
+  .accordion-content {
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+  .methods-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .methods-section p.subtitle {
+    font-size: 1rem;
+  }
+
+  .accordion-title h3 {
+    font-size: 1.1rem;
+  }
+  
+  .accordion-content {
+    font-size: 0.9rem;
+  }
+
+  .accordion-item {
+    padding: 0.5rem;
+  }
+}
