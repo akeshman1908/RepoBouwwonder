@@ -1,80 +1,80 @@
 /* Methods Section */
 .methods-section {
-  background-color: white;
-  padding: 4rem 0;
+  background-color: white !important;
+  padding: 4rem 0 !important;
 }
 
 .container {
-  max-width: 1000px;
-  margin: 0 auto;
-  text-align: center;
+  max-width: 1000px !important;
+  margin: 0 auto !important;
+  text-align: center !important;
 }
 
 .methods-section h2 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #223280; 
-  margin-bottom: 1rem;
+  font-size: 2.5rem !important;
+  font-weight: bold !important;
+  color: #223280 !important; 
+  margin-bottom: 1rem !important;
 }
 
 .methods-section p.subtitle {
-  font-size: 1.2rem;
-  color: #333;
-  margin-bottom: 3rem;
+  font-size: 1.2rem !important;
+  color: #333 !important;
+  margin-bottom: 3rem !important;
 }
 
 .accordion {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem; 
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 1rem !important;
 }
 
 .accordion-item {
-  background-color: #f1f1f1; 
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  background-color: #f1f1f1 !important; 
+  border-radius: 8px !important;
+  overflow: hidden !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important; 
 }
 
 .accordion-title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  cursor: pointer;
-  background-color: #223280; 
-  color: white;
-  font-size: 1.1rem;  
-  font-weight: normal; 
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  padding: 1rem !important;
+  cursor: pointer !important;
+  background-color: #223280 !important; 
+  color: white !important;
+  font-size: 1.1rem !important;  
+  font-weight: normal !important; 
 }
 
 .accordion-title h3 {
-  margin: 0;
-  display: flex;
-  align-items: center;
-  font-size: 1.3rem; 
+  margin: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  font-size: 1.3rem !important; 
 }
 
 .accordion-title h3 .number {
-  margin-right: 0.5rem; 
-  font-size: 1.3rem;    
-  font-weight: bold;    
+  margin-right: 0.5rem !important; 
+  font-size: 1.3rem !important;    
+  font-weight: bold !important;    
 }
 
 .accordion-title:hover {
-  background-color: #1b2545; 
+  background-color: #1b2545 !important; 
 }
 
 .accordion-icon {
-  font-size: 1rem; 
+  font-size: 1rem !important; 
 }
 
 .accordion-content {
-  padding: 1rem;
-  background-color: #f1f1f1;
-  color: #333;
-  font-size: 1rem;
-  line-height: 1.6;
+  padding: 1rem !important;
+  background-color: #f1f1f1 !important;
+  color: #333 !important;
+  font-size: 1rem !important;
+  line-height: 1.6 !important;
 }
 
 /* Responsive Design */
@@ -82,41 +82,41 @@
 /* Tablets */
 @media (max-width: 1024px) {
   .methods-section h2 {
-    font-size: 2rem;
+    font-size: 2rem !important;
   }
 
   .methods-section p.subtitle {
-    font-size: 1.1rem;
+    font-size: 1.1rem !important;
   }
 
   .accordion-title h3 {
-    font-size: 1.2rem;
+    font-size: 1.2rem !important;
   }
   
   .accordion-content {
-    font-size: 0.95rem;
+    font-size: 0.95rem !important;
   }
 }
 
 /* Mobile Devices */
 @media (max-width: 768px) {
   .methods-section h2 {
-    font-size: 1.8rem;
+    font-size: 1.8rem !important;
   }
 
   .methods-section p.subtitle {
-    font-size: 1rem;
+    font-size: 1rem !important;
   }
 
   .accordion-title h3 {
-    font-size: 1.1rem;
+    font-size: 1.1rem !important;
   }
   
   .accordion-content {
-    font-size: 0.9rem;
+    font-size: 0.9rem !important;
   }
 
   .accordion-item {
-    padding: 0.5rem;
+    padding: 0.5rem !important;
   }
 }

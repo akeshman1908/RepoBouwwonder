@@ -12,8 +12,8 @@
 
 h2 {
   font-size: 2.5rem;
-  color: white;
-  margin-bottom: 30px;
+  color: white !important;
+  margin-bottom: 40px; /* Increased margin-bottom for more space */
 }
 
 /* Statistics Grid */
@@ -22,6 +22,7 @@ h2 {
   justify-content: space-between;
   gap: 20px;
   margin-bottom: 50px;
+  margin-top: 20px; /* Additional margin-top for extra spacing */
   flex-wrap: wrap;
 }
 
@@ -69,9 +70,9 @@ h2 {
 
 /* Hover Effects */
 .stat-card:hover {
-  transform: translateY(-10px); /* Lift the card on hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
-  background-color: #f0f4fa; /* Light blue background on hover */
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #f0f4fa;
 }
 
 /* Responsive Design */

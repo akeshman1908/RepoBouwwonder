@@ -1,106 +1,106 @@
 /* Contact Section */
 .contact-section {
-  background-color: white; 
-  padding: 4rem 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: white !important; 
+  padding: 4rem 0 !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 
 .contact-section .container {
-  width: 85%;
-  max-width: 1200px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 2rem;
-  flex-wrap: wrap; /* Allow wrapping for responsive layouts */
+  width: 85% !important;
+  max-width: 1200px !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: flex-start !important;
+  gap: 2rem !important;
+  flex-wrap: wrap !important; /* Allow wrapping for responsive layouts */
 }
 
 /* Text Block */
 .contact-text {
-  color: black;
-  flex: 1;
+  color: black !important;
+  flex: 1 !important;
 }
 
 .contact-text h2 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-  color: #223280;
+  font-size: 2.5rem !important;
+  font-weight: bold !important;
+  margin-bottom: 1rem !important;
+  color: #223280 !important;
 }
 
 .contact-text p {
-  font-size: 1.2rem;
-  line-height: 1.6;
+  font-size: 1.2rem !important;
+  line-height: 1.6 !important;
 }
 
 .contact-form {
-  background-color: white;
-  border-radius: 10px;
-  padding: 2rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  flex: 1;
+  background-color: white !important;
+  border-radius: 10px !important;
+  padding: 2rem !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+  flex: 1 !important;
 }
 
 .contact-form .row {
-  display: flex;
-  gap: 1rem;
-  justify-content: space-between; /* Ensure equal spacing */
+  display: flex !important;
+  gap: 1rem !important;
+  justify-content: space-between !important; /* Ensure equal spacing */
 }
 
 .contact-form input[type="text"],
 .contact-form input[type="email"] {
-  flex: 1; /* Make all input fields in the row equal in width */
-  min-width: 0; /* Ensure they can shrink properly */
+  flex: 1 !important; /* Make all input fields in the row equal in width */
+  min-width: 0 !important; /* Ensure they can shrink properly */
 }
 
 .contact-form input,
 .contact-form textarea {
-  width: 100%;
-  box-sizing: border-box; /* Ensure padding is included in the width */
-  padding: 0.75rem;
-  margin-bottom: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  font-size: 1rem;
+  width: 100% !important;
+  box-sizing: border-box !important; /* Ensure padding is included in the width */
+  padding: 0.75rem !important;
+  margin-bottom: 1rem !important;
+  border: 1px solid #ddd !important;
+  border-radius: 5px !important;
+  font-size: 1rem !important;
 }
 
 /* Email and Message Fields */
 .contact-form .email-field,
 .contact-form .message-field {
-  flex: 1; /* Make email and message field full width in the row */
+  flex: 1 !important; /* Make email and message field full width in the row */
 }
 
 .contact-form textarea {
-  height: 150px; /* Larger height for the message field */
-  resize: vertical; /* Allow resizing of the textarea */
+  height: 150px !important; /* Larger height for the message field */
+  resize: vertical !important; /* Allow resizing of the textarea */
 }
 
 .contact-form input[type="checkbox"] {
-  width: auto;
+  width: auto !important;
 }
 
 .contact-form label {
-  display: flex;
-  align-items: center;
-  margin-bottom: 1rem;
+  display: flex !important;
+  align-items: center !important;
+  margin-bottom: 1rem !important;
 }
 
 .contact-form .btn {
-  background-color: #f57c00;
-  color: white;
-  padding: 0.75rem 1.5rem;
-  border: none;
-  border-radius: 5px;
-  font-size: 1rem;
-  cursor: pointer;
-  font-weight: bold;
-  width: 100%;
+  background-color: #f57c00 !important;
+  color: white !important;
+  padding: 0.75rem 1.5rem !important;
+  border: none !important;
+  border-radius: 5px !important;
+  font-size: 1rem !important;
+  cursor: pointer !important;
+  font-weight: bold !important;
+  width: 100% !important;
 }
 
 .contact-form .btn:hover {
-  background-color: #d96b00;
+  background-color: #d96b00 !important;
 }
 
 /* Responsive Design */
@@ -108,43 +108,43 @@
 /* Tablets */
 @media (max-width: 1024px) {
   .contact-section .container {
-    flex-direction: column; /* Stack text and form vertically on tablets */
-    align-items: center;
+    flex-direction: column !important; /* Stack text and form vertically on tablets */
+    align-items: center !important;
   }
 
   .contact-text h2 {
-    font-size: 2rem; /* Adjust heading size */
+    font-size: 2rem !important; /* Adjust heading size */
   }
 
   .contact-text p {
-    font-size: 1.1rem; /* Adjust text size */
+    font-size: 1.1rem !important; /* Adjust text size */
   }
 
   .contact-form .row {
-    flex-direction: column; /* Stack fields vertically on smaller screens */
+    flex-direction: column !important; /* Stack fields vertically on smaller screens */
   }
 }
 
 /* Mobile Devices */
 @media (max-width: 768px) {
   .contact-section {
-    padding: 2rem 0; /* Reduce padding on mobile */
+    padding: 2rem 0 !important; /* Reduce padding on mobile */
   }
 
   .contact-text h2 {
-    font-size: 1.8rem; /* Smaller heading for mobile */
+    font-size: 1.8rem !important; /* Smaller heading for mobile */
   }
 
   .contact-text p {
-    font-size: 1rem; /* Adjust text size for mobile */
+    font-size: 1rem !important; /* Adjust text size for mobile */
   }
 
   .contact-form {
-    padding: 1.5rem; /* Reduce form padding */
+    padding: 1.5rem !important; /* Reduce form padding */
   }
 
   .contact-form input,
   .contact-form textarea {
-    font-size: 0.9rem; /* Slightly smaller text for inputs */
+    font-size: 0.9rem !important; /* Slightly smaller text for inputs */
   }
 }

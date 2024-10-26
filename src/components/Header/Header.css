@@ -1,97 +1,97 @@
 /* Header container - Full width background */
 .header {
-  background-color: #223280; /* Blue background */
-  height: 40rem; /* Increased height */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0; /* Remove padding to align with navbar */
-  width: 100vw; /* Full width of the viewport */
-  margin-top: 0; /* Remove margin to align directly under the navbar */
-  position: relative;
+  background-color: #223280 !important; /* Blue background */
+  height: 40rem !important; /* Increased height */
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 0 !important; /* Remove padding to align with navbar */
+  width: 100vw !important; /* Full width of the viewport */
+  margin-top: 0 !important; /* Remove margin to align directly under the navbar */
+  position: relative !important;
 }
 
 /* Constrain content inside a centered container */
 .header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 85%; /* Set a relative width to keep content within a container */
-  max-width: 1200px; /* Maximum width to ensure readability */
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  width: 85% !important; /* Set a relative width to keep content within a container */
+  max-width: 1200px !important; /* Maximum width to ensure readability */
 }
 
 /* Left side (image) */
 .header .image-container {
-  flex: 1;
-  display: flex;
-  justify-content: center;
+  flex: 1 !important;
+  display: flex !important;
+  justify-content: center !important;
 }
 
 .header .image-container img {
-  width: 70%; /* Adjust as needed */
-  border-radius: 15px; /* Slightly rounded corners */
+  width: 70% !important; /* Adjust as needed */
+  border-radius: 15px !important; /* Slightly rounded corners */
 }
 
 /* Right side (text, slogan, button, review) */
 .header .content {
-  flex: 1.2;
-  color: white;
-  text-align: left; /* Left-align all text */
+  flex: 1.2 !important;
+  color: white !important;
+  text-align: left !important; /* Left-align all text */
 }
 
 .header .content h1 {
-  font-size: 2.5rem;
-  font-weight: bold;
+  font-size: 2.5rem !important;
+  font-weight: bold !important;
 }
 
 .header .content p {
-  font-size: 1.2rem;
-  margin: 1rem 0;
+  font-size: 1.2rem !important;
+  margin: 1rem 0 !important;
 }
 
 .header .content .slogan {
-  font-size: 1.5rem;
-  margin-bottom: 1.5rem;
+  font-size: 1.5rem !important;
+  margin-bottom: 1.5rem !important;
 }
 
 .header .content .btn {
-  background-color: #f57c00; /* Orange button */
-  color: white;
-  padding: 0.8rem 1.5rem;
-  border-radius: 30px;
-  font-size: 1.2rem;
-  font-weight: bold;
-  border: none;
-  cursor: pointer;
-  margin-bottom: 2rem;
+  background-color: #f57c00 !important; /* Orange button */
+  color: white !important;
+  padding: 0.8rem 1.5rem !important;
+  border-radius: 30px !important;
+  font-size: 1.2rem !important;
+  font-weight: bold !important;
+  border: none !important;
+  cursor: pointer !important;
+  margin-bottom: 2rem !important;
 }
 
 .header .content .btn:hover {
-  background-color: #d96b00;
+  background-color: #d96b00 !important;
 }
 
 /* Review box */
 .header .content .review-container {
-  background-color: white;
-  color: black;
-  padding: 1rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  max-width: 300px;
+  background-color: white !important;
+  color: black !important;
+  padding: 1rem !important;
+  border-radius: 10px !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+  max-width: 300px !important;
 }
 
 .header .content .review-container p {
-  font-size: 1rem;
+  font-size: 1rem !important;
 }
 
 .header .content .review-container .reviewer {
-  font-weight: bold;
-  margin-top: 0.5rem;
+  font-weight: bold !important;
+  margin-top: 0.5rem !important;
 }
 
 /* Yellow stars */
 .header .content .review-container .stars i {
-  color: #ffc107; /* Yellow color for stars */
+  color: #ffc107 !important; /* Yellow color for stars */
 }
 
 /* Responsive Design */
@@ -99,61 +99,61 @@
 /* Tablets */
 @media (max-width: 1024px) {
   .header {
-    height: 35rem; /* Decrease height for tablets */
+    height: 35rem !important; /* Decrease height for tablets */
   }
 
   .header .content h1 {
-    font-size: 2rem; /* Adjust heading size */
+    font-size: 2rem !important; /* Adjust heading size */
   }
 
   .header .content p {
-    font-size: 1rem;
+    font-size: 1rem !important;
   }
 
   .header .content .slogan {
-    font-size: 1.3rem;
+    font-size: 1.3rem !important;
   }
 
   .header .image-container img {
-    width: 60%; /* Adjust image size */
+    width: 60% !important; /* Adjust image size */
   }
 }
 
 /* Mobile Devices */
 @media (max-width: 768px) {
   .header {
-    flex-direction: column; /* Stack image and content vertically */
-    height: auto; /* Adjust height for mobile */
-    padding: 20px 0; /* Add some padding */
+    flex-direction: column !important; /* Stack image and content vertically */
+    height: auto !important; /* Adjust height for mobile */
+    padding: 20px 0 !important; /* Add some padding */
   }
 
   .header .container {
-    flex-direction: column; /* Stack content vertically */
-    width: 90%; /* Reduce width for better readability on mobile */
+    flex-direction: column !important; /* Stack content vertically */
+    width: 90% !important; /* Reduce width for better readability on mobile */
   }
 
   .header .image-container {
-    display: none; /* Hide image on mobile */
+    display: none !important; /* Hide image on mobile */
   }
 
   .header .content h1 {
-    font-size: 1.8rem; /* Smaller heading size for mobile */
+    font-size: 1.8rem !important; /* Smaller heading size for mobile */
   }
 
   .header .content p {
-    font-size: 1rem; /* Smaller paragraph size */
+    font-size: 1rem !important; /* Smaller paragraph size */
   }
 
   .header .content .slogan {
-    font-size: 1.2rem;
+    font-size: 1.2rem !important;
   }
 
   .header .content .btn {
-    font-size: 1rem;
-    padding: 0.7rem 1.2rem; /* Smaller button for mobile */
+    font-size: 1rem !important;
+    padding: 0.7rem 1.2rem !important; /* Smaller button for mobile */
   }
 
   .header .content .review-container {
-    max-width: 100%; /* Make the review container take full width */
+    max-width: 100% !important; /* Make the review container take full width */
   }
 }

@@ -28,10 +28,10 @@ function HomePage() {
 
         {/* WhatsApp and Email floating buttons */}
         <div className="floating-buttons">
-          <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className="whatsapp-btn">
+          <a href="https://wa.me/+31657117882" target="_blank" rel="noopener noreferrer" className="whatsapp-btn">
             <i className="fab fa-whatsapp"></i>
           </a>
-          <a href="mailto:info@wonderbouw.nl" className="email-btn">
+          <a href="mailto:info@bouwwonders.nl" className="email-btn">
             <i className="fas fa-envelope"></i>
           </a>
         </div>

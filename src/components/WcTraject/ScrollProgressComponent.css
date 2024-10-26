@@ -1,0 +1,32 @@
+.progress-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .step {
+    margin-bottom: 2rem;
+    position: relative;
+    text-align: center;
+  }
+  
+  .progress-img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .progress-img:hover {
+    transform: scale(1.05);
+  }
+  
+  .step-description {
+    margin-top: 1rem;
+    border-radius: 8px;
+  }
+  
+  .step-description h4 {
+    color: #223280; /* Bijpassende kleur */
+  }
+  
