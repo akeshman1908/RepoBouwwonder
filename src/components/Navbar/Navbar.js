@@ -9,13 +9,10 @@ function Navbar() {
   const [scrollToId, setScrollToId] = useState(null);
 
   const scrollToSectionSlowly = (id) => {
-    // Check if we're already on the homepage
     if (location.pathname !== '/') {
-      // If not, navigate to the homepage and store the target id for scrolling
       setScrollToId(id);
       navigate('/');
     } else {
-      // If on the homepage, scroll immediately
       scrollToTarget(id);
     }
   };
@@ -26,16 +23,15 @@ function Navbar() {
       const targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
       window.scrollTo({
         top: targetPosition,
-        behavior: 'smooth'
+        behavior: 'smooth',
       });
     }
   };
 
   useEffect(() => {
-    // Trigger scroll if scrollToId is set after navigating to homepage
     if (scrollToId) {
       scrollToTarget(scrollToId);
-      setScrollToId(null); // Reset scrollToId after scrolling
+      setScrollToId(null);
     }
   }, [location.pathname, scrollToId]);
 
