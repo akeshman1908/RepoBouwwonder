@@ -1,83 +1,89 @@
 .progress-container {
-  background-color: #223280;
-  width: 100vw;
-  padding: 3rem 1rem;
-  display: flex;
-  justify-content: center;
+  background-color: #223280 !important;
+  width: 100% !important;
+  padding: 3rem 1rem !important;
+  display: flex !important;
+  justify-content: center !important;
 }
 
 .progress-section {
-  display: flex;
-  flex-direction: row; /* Default to row layout for desktop */
-  align-items: flex-start;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 1200px;
-  padding: 1rem;
+  display: flex !important;
+  flex-direction: row !important; /* Standaard rij-indeling voor desktop */
+  align-items: stretch !important; /* Zorgt ervoor dat de stappen dezelfde hoogte hebben */
+  justify-content: space-between !important;
+  width: 100% !important;
+  max-width: 1200px !important;
+  padding: 1rem !important;
+  margin: 0 auto !important; /* Centreert de inhoud binnen de container */
 }
 
 .step {
-  text-align: center;
-  padding: 1rem;
-  width: 30%; /* Steps sit next to each other on desktop */
-  max-width: 350px;
-  margin: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center !important;
+  padding: 1rem !important;
+  width: 30% !important; /* Stappen naast elkaar op desktop */
+  max-width: 350px !important;
+  margin: 1rem !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
 }
 
 .progress-img {
-  width: 100%;
-  max-width: 300px;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
-  border: 3px solid white;
+  width: 100% !important;
+  max-width: 300px !important;
+  border-radius: 10px !important;
+  transition: transform 0.3s ease !important;
+  border: 3px solid white !important;
 }
 
 .progress-img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05) !important;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2) !important;
 }
 
 .step-description {
-  margin-top: 1rem;
-  border-radius: 10px;
-  background-color: #ffffff;
-  padding: 1.5rem;
-  width: 100%;
-  max-width: 300px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 1rem !important;
+  border-radius: 10px !important;
+  background-color: #ffffff !important;
+  padding: 1.5rem !important;
+  width: 100% !important;
+  max-width: 300px !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+  flex: 1 !important; /* Zorgt ervoor dat de kaarten dezelfde hoogte hebben */
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
 }
 
 .step-description h4 {
-  color: #223280;
-  font-weight: 700;
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  color: #223280 !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-bottom: 1rem !important;
 }
 
 .icon-white {
-  color: #223280;
-  margin-right: 0.5rem;
+  color: #223280 !important;
+  margin-right: 0.5rem !important;
 }
 
-/* Mobile View: stack steps vertically */
+/* Mobiele weergave: stappen verticaal stapelen */
 @media (max-width: 768px) {
   .progress-section {
-    flex-direction: column; /* Stack steps vertically on mobile */
-    align-items: center;
+    flex-direction: column !important; /* Stappen verticaal stapelen op mobiel */
+    align-items: center !important;
   }
 
   .step {
-    width: 100%; /* Full width on mobile */
-    max-width: 90%;
-    margin-bottom: 2rem;
+    width: 100% !important; /* Volledige breedte op mobiel */
+    max-width: 90% !important;
+    margin-bottom: 2rem !important;
   }
 
   .step:last-of-type {
-    margin-bottom: 0;
+    margin-bottom: 0 !important;
   }
 }

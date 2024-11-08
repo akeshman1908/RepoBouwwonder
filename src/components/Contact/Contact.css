@@ -1,150 +1,186 @@
-/* Contact Section */
+/* Reset enkele standaardstijlen */
+* {
+  box-sizing: border-box !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Contactsectie */
 .contact-section {
-  background-color: white !important; 
-  padding: 4rem 0 !important;
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
+  background-color: #fff !important;
+  padding: 60px 20px !important;
 }
 
-.contact-section .container {
-  width: 85% !important;
+/* Container */
+.contact-container {
   max-width: 1200px !important;
+  margin: 0 auto !important;
   display: flex !important;
-  justify-content: space-between !important;
-  align-items: flex-start !important;
-  gap: 2rem !important;
-  flex-wrap: wrap !important; /* Allow wrapping for responsive layouts */
+  flex-wrap: wrap !important;
+  gap: 40px !important;
 }
 
-/* Text Block */
+/* Linkerzijde - Tekst */
 .contact-text {
-  color: black !important;
-  flex: 1 !important;
+  flex: 1 1 400px !important;
 }
 
 .contact-text h2 {
   font-size: 2.5rem !important;
-  font-weight: bold !important;
-  margin-bottom: 1rem !important;
   color: #223280 !important;
+  margin-bottom: 20px !important;
 }
 
 .contact-text p {
   font-size: 1.2rem !important;
   line-height: 1.6 !important;
+  color: #000 !important;
 }
 
+/* Rechterzijde - Formulier */
 .contact-form {
-  background-color: white !important;
+  flex: 1 1 400px !important;
+  background-color: #fff !important;
   border-radius: 10px !important;
-  padding: 2rem !important;
+  padding: 30px !important;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
-  flex: 1 !important;
 }
 
-.contact-form .row {
-  display: flex !important;
-  gap: 1rem !important;
-  justify-content: space-between !important; /* Ensure equal spacing */
-}
-
-.contact-form input[type="text"],
-.contact-form input[type="email"] {
-  flex: 1 !important; /* Make all input fields in the row equal in width */
-  min-width: 0 !important; /* Ensure they can shrink properly */
-}
-
-.contact-form input,
-.contact-form textarea {
+.contact-form form {
   width: 100% !important;
-  box-sizing: border-box !important; /* Ensure padding is included in the width */
-  padding: 0.75rem !important;
-  margin-bottom: 1rem !important;
+}
+
+.form-row {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 20px !important;
+  margin-bottom: 20px !important;
+}
+
+.form-row input,
+.form-row textarea {
+  flex: 1 1 calc(50% - 10px) !important;
+  padding: 15px !important;
+  font-size: 1rem !important;
   border: 1px solid #ddd !important;
   border-radius: 5px !important;
-  font-size: 1rem !important;
 }
 
-/* Email and Message Fields */
-.contact-form .email-field,
-.contact-form .message-field {
-  flex: 1 !important; /* Make email and message field full width in the row */
+.form-row textarea {
+  flex: 1 1 100% !important;
+  height: 150px !important;
+  resize: vertical !important;
 }
 
-.contact-form textarea {
-  height: 150px !important; /* Larger height for the message field */
-  resize: vertical !important; /* Allow resizing of the textarea */
+/* Zorg ervoor dat het e-mailveld en de textarea de volledige breedte innemen */
+.form-row input[type="email"],
+.form-row textarea {
+  flex: 1 1 100% !important;
 }
 
-.contact-form input[type="checkbox"] {
-  width: auto !important;
+/* Checkbox Rij */
+.checkbox-row {
+  flex-direction: row !important;
+  align-items: flex-start !important;
+  margin-bottom: 15px !important;
 }
 
-.contact-form label {
+.checkbox-row label {
   display: flex !important;
   align-items: center !important;
-  margin-bottom: 1rem !important;
+  font-size: 0.9rem !important;
+  line-height: 1.4 !important;
+  color: #555 !important;
+  margin-top: 10px !important; /* Extra marge boven */
+  margin-bottom: 10px !important; /* Extra marge onder */
 }
 
-.contact-form .btn {
+.checkbox-row input[type="checkbox"] {
+  margin-right: 10px !important;
+  width: 18px !important;
+  height: 18px !important;
+  cursor: pointer !important;
+}
+
+/* Verzendknop */
+.btn {
   background-color: #f57c00 !important;
-  color: white !important;
-  padding: 0.75rem 1.5rem !important;
+  color: #fff !important;
+  padding: 15px !important;
+  font-size: 1rem !important;
+  font-weight: bold !important;
   border: none !important;
   border-radius: 5px !important;
-  font-size: 1rem !important;
   cursor: pointer !important;
-  font-weight: bold !important;
-  width: 100% !important;
+  flex: 1 1 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
 
-.contact-form .btn:hover {
+.btn:hover {
   background-color: #d96b00 !important;
 }
 
-/* Responsive Design */
+.btn i {
+  margin-left: 10px !important;
+}
+
+/* Responsief ontwerp */
 
 /* Tablets */
 @media (max-width: 1024px) {
-  .contact-section .container {
-    flex-direction: column !important; /* Stack text and form vertically on tablets */
+  .contact-container {
+    flex-direction: column !important;
     align-items: center !important;
   }
 
-  .contact-text h2 {
-    font-size: 2rem !important; /* Adjust heading size */
-  }
-
-  .contact-text p {
-    font-size: 1.1rem !important; /* Adjust text size */
-  }
-
-  .contact-form .row {
-    flex-direction: column !important; /* Stack fields vertically on smaller screens */
-  }
-}
-
-/* Mobile Devices */
-@media (max-width: 768px) {
-  .contact-section {
-    padding: 2rem 0 !important; /* Reduce padding on mobile */
+  .contact-text,
+  .contact-form {
+    flex: 1 1 100% !important;
   }
 
   .contact-text h2 {
-    font-size: 1.8rem !important; /* Smaller heading for mobile */
+    font-size: 2rem !important;
+    text-align: center !important;
   }
 
   .contact-text p {
-    font-size: 1rem !important; /* Adjust text size for mobile */
+    font-size: 1.1rem !important;
+    text-align: center !important;
   }
 
   .contact-form {
-    padding: 1.5rem !important; /* Reduce form padding */
+    padding: 20px !important;
+  }
+}
+
+/* Mobiele apparaten */
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 40px 10px !important;
   }
 
-  .contact-form input,
-  .contact-form textarea {
-    font-size: 0.9rem !important; /* Slightly smaller text for inputs */
+  .contact-text h2 {
+    font-size: 1.8rem !important;
+  }
+
+  .contact-text p {
+    font-size: 1rem !important;
+  }
+
+  .form-row {
+    gap: 10px !important;
+    margin-bottom: 10px !important; /* Consistente marge voor alle rijen */
+  }
+
+  .form-row input,
+  .form-row textarea {
+    flex: 1 1 100% !important;
+  }
+
+  .btn {
+    padding: 12px !important;
+    font-size: 0.9rem !important;
   }
 }

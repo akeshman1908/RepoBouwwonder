@@ -7,6 +7,7 @@ function Navbar() {
   const navigate = useNavigate();
   const location = useLocation();
   const [scrollToId, setScrollToId] = useState(null);
+  const [navbarOpen, setNavbarOpen] = useState(false); // State to manage navbar toggle
 
   const scrollToSectionSlowly = (id) => {
     if (location.pathname !== '/') {
@@ -15,12 +16,14 @@ function Navbar() {
     } else {
       scrollToTarget(id);
     }
+    setNavbarOpen(false); // Close the navbar after clicking a link
   };
 
   const scrollToTarget = (id) => {
     const target = document.querySelector(id);
     if (target) {
-      const targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
+      const targetPosition =
+        target.getBoundingClientRect().top + window.pageYOffset;
       window.scrollTo({
         top: targetPosition,
         behavior: 'smooth',
@@ -54,44 +57,67 @@ function Navbar() {
           <button
             className="navbar-toggler"
             type="button"
-            data-toggle="collapse"
-            data-target="#navbarNav"
+            onClick={() => setNavbarOpen(!navbarOpen)} // Toggle navbar state
             aria-controls="navbarNav"
-            aria-expanded="false"
+            aria-expanded={navbarOpen}
             aria-label="Toggle navigation"
           >
             <span className="navbar-toggler-icon"></span>
           </button>
 
-          <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <div
+            className={`collapse navbar-collapse justify-content-end ${
+              navbarOpen ? 'show' : ''
+            }`}
+            id="navbarNav"
+          >
             <ul className="navbar-nav align-items-center">
               <li className="nav-item">
-                <a className="nav-link" onClick={() => scrollToSectionSlowly('#services')}>
+                <a
+                  className="nav-link"
+                  onClick={() => scrollToSectionSlowly('#services')}
+                >
                   Diensten
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" onClick={() => scrollToSectionSlowly('#about-us')}>
+                <a
+                  className="nav-link"
+                  onClick={() => scrollToSectionSlowly('#about-us')}
+                >
                   Over ons
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" onClick={() => scrollToSectionSlowly('#werkwijze')}>
+                <a
+                  className="nav-link"
+                  onClick={() => scrollToSectionSlowly('#werkwijze')}
+                >
                   Werkwijze
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" onClick={() => scrollToSectionSlowly('#reviews')}>
+                <a
+                  className="nav-link"
+                  onClick={() => scrollToSectionSlowly('#reviews')}
+                >
                   Reviews
                 </a>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/portfolio">
+                <Link
+                  className="nav-link"
+                  to="/portfolio"
+                  onClick={() => setNavbarOpen(false)}
+                >
                   Portfolio
                 </Link>
               </li>
               <li className="nav-item">
-                <a className="btn contact-btn" onClick={() => scrollToSectionSlowly('#contact')}>
+                <a
+                  className="btn contact-btn"
+                  onClick={() => scrollToSectionSlowly('#contact')}
+                >
                   Neem contact op!
                 </a>
               </li>

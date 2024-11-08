@@ -107,17 +107,17 @@ body {
   }
 }
 
-/* Responsive Design for Mobile */
+/* Responsive Design for Mobile - Larger Buttons */
 @media (max-width: 768px) {
   .floating-buttons a {
-    width: 40px;  /* Smallest size for mobile */
-    height: 40px; /* Smallest size for mobile */
-    font-size: 1.1rem; /* Smaller icon size for mobile */
+    width: 55px;  /* Vergroot de grootte op mobiele apparaten */
+    height: 55px; /* Vergroot de grootte op mobiele apparaten */
+    font-size: 1.4rem; /* Vergroot de grootte van het icoon */
   }
 
   .floating-buttons {
-    bottom: 15px;  /* Adjust button position for mobile */
-    right: 15px;   /* Adjust button position for mobile */
+    bottom: 20px;  /* Pas de positie van de knoppen aan */
+    right: 20px;   /* Pas de positie van de knoppen aan */
   }
 }
 

@@ -5,27 +5,32 @@ const Portfolio = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [isModalOpen, setModalOpen] = useState(false);
 
+  // Array van afbeeldingen uit public/images/traject
   const images = [
-    'https://picsum.photos/id/237/200/300',
-    'https://picsum.photos/id/238/200/300',
-    'https://picsum.photos/id/239/200/300',
-    'https://picsum.photos/id/240/200/300',
-    'https://picsum.photos/id/241/200/300',
-    'https://picsum.photos/id/242/200/300',
-    'https://picsum.photos/id/243/200/300',
-    'https://picsum.photos/id/244/200/300',
-    'https://picsum.photos/id/245/200/300',
-    'https://picsum.photos/id/246/200/300',
-    'https://picsum.photos/id/247/200/300',
-    'https://picsum.photos/id/248/200/300',
-    'https://picsum.photos/id/249/200/300',
-    'https://picsum.photos/id/250/200/300',
-    'https://picsum.photos/id/251/200/300',
-    'https://picsum.photos/id/252/200/300',
-    'https://picsum.photos/id/253/200/300',
-    'https://picsum.photos/id/254/200/300',
-    'https://picsum.photos/id/255/200/300',
-    'https://picsum.photos/id/256/200/300',
+    '/images/traject/image1.jpeg',
+    '/images/traject/image2.jpeg',
+    '/images/traject/image3.jpeg',
+    '/images/traject/image4.jpeg',
+    '/images/traject/image5.jpeg',
+    '/images/traject/image6.jpeg',
+    '/images/traject/image7.jpeg',
+    '/images/traject/image8.jpeg',
+    '/images/traject/image9.jpeg',
+    '/images/traject/image10.jpeg',
+    '/images/traject/image11.jpeg',
+    '/images/traject/image12.jpeg',
+    '/images/traject/image13.jpeg',
+    '/images/traject/image14.jpeg',
+    '/images/traject/image15.jpeg',
+    '/images/traject/image16.jpeg',
+    '/images/traject/image17.jpeg',
+    '/images/traject/image18.jpeg',
+    '/images/traject/image19.jpeg',
+    '/images/traject/image20.jpeg',
+    '/images/traject/image21.jpeg',
+    '/images/traject/image22.jpeg',
+    '/images/traject/image23.jpeg',
+    '/images/traject/image24.jpeg',
   ];
 
   const openModal = (image) => {
@@ -34,14 +39,14 @@ const Portfolio = () => {
   };
 
   const closeModal = (e) => {
-    e.stopPropagation(); // Voorkomt dat het klikken op de modal de sluitactie triggert
+    e.stopPropagation(); // Voorkomt sluiten van modal bij klikken binnen modal
     setSelectedImage(null);
     setModalOpen(false);
   };
 
   return (
-    <div className="portfolio-container container">
-      {/* Grid van afbeeldingen */}
+    <div className="portfolio-container">
+      {/* Raster van afbeeldingen */}
       <div className="portfolio-grid">
         {images.map((image, index) => (
           <div key={index} className="portfolio-item" onClick={() => openModal(image)}>
@@ -57,7 +62,7 @@ const Portfolio = () => {
             &times;
           </button>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <img src={selectedImage} alt="Selected" />
+            <img src={selectedImage} alt="Geselecteerd" />
           </div>
         </div>
       )}

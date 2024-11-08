@@ -1,95 +1,96 @@
 .portfolio-container {
-  padding: 2rem;
+  padding: 2rem !important;
+  max-width: 1200px !important;
+  margin: 0 auto !important;
 }
 
 .portfolio-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive column sizing */
-  gap: 1rem;
-  margin: 0 auto;
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)) !important; /* Responsieve kolomgrootte */
+  gap: 1rem !important;
 }
 
 .portfolio-item {
-  position: relative;
-  cursor: pointer;
-  overflow: hidden;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
+  position: relative !important;
+  cursor: pointer !important;
+  overflow: hidden !important;
+  border-radius: 10px !important;
+  transition: transform 0.3s ease !important;
 }
 
 .portfolio-item img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  transition: all 0.3s ease;
+  width: 100% !important;
+  height: auto !important;
+  object-fit: cover !important;
+  transition: all 0.3s ease !important;
 }
 
 .portfolio-item:hover img {
-  transform: scale(1.1);
+  transform: scale(1.1) !important;
 }
 
 .modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.8);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-  padding: 1rem; /* Add padding to avoid image touching screen edges */
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  background: rgba(0, 0, 0, 0.8) !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  z-index: 1000 !important;
+  padding: 1rem !important; /* Voeg padding toe om te voorkomen dat de afbeelding de randen raakt */
 }
 
 .modal-content {
-  background: transparent;
-  padding: 0;
-  border-radius: 10px;
-  max-width: 90vw; /* Restrict size on smaller screens */
-  max-height: 90vh; /* Restrict height on smaller screens */
+  background: transparent !important;
+  padding: 0 !important;
+  border-radius: 10px !important;
+  max-width: 90vw !important; /* Beperk grootte op kleinere schermen */
+  max-height: 90vh !important; /* Beperk hoogte op kleinere schermen */
 }
 
 .modal-content img {
-  width: auto;
-  height: auto;
-  max-width: 100%;
-  max-height: 100%;
-  margin: auto;
-  display: block;
+  width: auto !important;
+  height: auto !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  margin: auto !important;
+  display: block !important;
 }
 
 .close-modal {
-  position: absolute;
-  top: 10px; /* Adjusted for better mobile positioning */
-  right: 10px; /* Adjusted for better mobile positioning */
-  background: transparent;
-  border: none;
-  color: white;
-  font-size: 2rem;
-  cursor: pointer;
-  z-index: 1001;
+  position: absolute !important;
+  top: 10px !important; /* Aangepast voor betere mobiele positionering */
+  right: 10px !important; /* Aangepast voor betere mobiele positionering */
+  background: transparent !important;
+  border: none !important;
+  color: white !important;
+  font-size: 2rem !important;
+  cursor: pointer !important;
+  z-index: 1001 !important;
 }
 
-/* Mobile-specific adjustments */
+/* Mobiele aanpassingen */
 @media (max-width: 768px) {
   .portfolio-container {
-    padding: 1rem;
+    padding: 1rem !important;
   }
 
   .portfolio-grid {
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Adjust column size for smaller screens */
-    gap: 0.5rem; /* Reduce gap between items on mobile */
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)) !important; /* Pas kolomgrootte aan voor kleinere schermen */
+    gap: 0.5rem !important; /* Verminder ruimte tussen items op mobiel */
   }
 
   .modal-content img {
-    max-width: 85vw; /* Slightly reduce max size for mobile */
-    max-height: 85vh; /* Slightly reduce max size for mobile */
+    max-width: 85vw !important; /* Verminder maximale grootte iets voor mobiel */
+    max-height: 85vh !important; /* Verminder maximale grootte iets voor mobiel */
   }
 
   .close-modal {
-    top: 15px;
-    right: 15px;
-    font-size: 1.5rem; /* Reduce size of close button for mobile */
+    top: 15px !important;
+    right: 15px !important;
+    font-size: 1.5rem !important; /* Verklein sluitknop voor mobiel */
   }
 }
